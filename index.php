@@ -1,7 +1,7 @@
 <?php 
 require ($_SERVER['DOCUMENT_ROOT'].'/c/c.php');//Call Core Function
 
-$a['[t]']="NOSQL-PHP";//Set Home Title
+$a['[t]']="Without MYSQL CMS";//Set Home Title
 $a['[d']="Introduction to the website";//Introduction to Setting Up a Web Site
 $a['[k]']="Keyword";//Set Site Keyword
 $c[]="Text 1<br />";
