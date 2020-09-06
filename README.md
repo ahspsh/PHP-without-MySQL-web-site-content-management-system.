@@ -1,6 +1,7 @@
 # nomysql-php
-#c/c.php
+c/c.php
 This is the core function file.
+Call Core File
 
 
 
