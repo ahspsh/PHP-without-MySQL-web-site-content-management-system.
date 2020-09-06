@@ -1,9 +1,13 @@
 <?php 
-require ($_SERVER['DOCUMENT_ROOT'].'/c/c.php');
+require ($_SERVER['DOCUMENT_ROOT'].'/c/c.php');//Call Core Function
 
-$a['[t]']="NOSQL-PHP";
-$a['[d']="一个不需要数据库的php";
-$a['[k]']="无数据库";
-$a['[c]']="正文";
-echo th(dk($_SERVER['DOCUMENT_ROOT'].'/m/index.php'),$a);
+$a['[t]']="NOSQL-PHP";//Set Home Title
+$a['[d']="Introduction to the website";//Introduction to Setting Up a Web Site
+$a['[k]']="Keyword";//Set Site Keyword
+$c[]="Text 1<br />";
+$c[]="Text 2<br />";
+$c[]="More content…<br />";
+$a['[c]']=hc($c);//String composition of text content
+
+echo th(dk($_SERVER['DOCUMENT_ROOT'].'/m/index.php'),$a);//Open the template and make a template tag replacement,And output to the page.
 ?>
