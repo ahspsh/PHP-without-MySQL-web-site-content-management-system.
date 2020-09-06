@@ -1,4 +1,4 @@
-# nomysql-php
+#PHP-without-MySQL-web-site-content-management-system.
 Directory structure:
 Function directory: "C".
 Template directory: "m".
