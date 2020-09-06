@@ -30,6 +30,7 @@ tj(“m/test.php”,"Hello, world!");
 ?>
 
 3.Obtain the desired content in the file (used to modify the file content or collection, can also be cross-site data processing)
+Grammar:
 dw(content,Front Positioning MarkerRear Positioning Marker)
 
 
@@ -59,3 +60,9 @@ Example 2: Delete a single file.
 <?php
 sc("a/test.html");//Danger: Deleted files cannot be recovered!
 ?>
+6. Query whether a file exists:
+cz (file path and name);
+
+7.The characters contain:
+bh (content, keyword);
+
