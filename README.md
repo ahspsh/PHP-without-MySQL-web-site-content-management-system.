@@ -84,4 +84,17 @@ cz (file path and name);
 7.The characters contain:
 bh (content, keyword);
 
-8.
+8.File List:
+
+Assume the file directory is a.
+
+<?php
+$g=glob(“a/*”);//a List all folders and files in alphabetical order under the.
+$g=glob(“a/*.html”);All HTML files in the a directory
+$g=glob("a/a*.html");A directory for all HTML files beginning with a
+$g=glob("a/a1.html");The A1 file under the a directory.
+
+
+
+
+？>
