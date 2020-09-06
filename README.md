@@ -29,7 +29,12 @@ Example:
 tj(“m/test.php”,"Hello, world!");
 ?>
 
-3.Modification of the contents of the document:
+3.Obtain the desired content in the file (used to modify the file content or collection, can also be cross-site data processing)
+dw(content,Front Positioning MarkerRear Positioning Marker)
+
+
+
+4.Modification of the contents of the document:
 (1)Open the file you want to modify.
 (2) Locate the content that needs to be modified.
 Dw (Content, Prefix, Postfix);
@@ -43,7 +48,7 @@ tj();
 
 ？>
 
-4. Delete a directory or file:
+5. Delete a directory or file:
 SC (directory or file);
 Example 1: Delete all directories and files in directory a
 <？php
