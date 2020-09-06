@@ -28,7 +28,19 @@ Example:
 tj(“m/test.php”,"Hello, world!");
 ?>
 
-3. Delete a directory or file:
+3.Modification of the contents of the document:
+(1)Open the file you want to modify.
+(2) Locate the content that needs to be modified.
+Dw (Content, Prefix, Postfix);
+(3)Submission of amendments.
+Example:
+<？php
+$Filename = "$_GET['ID']";
+dw($Filename,"< text >")
+tj();
+
+
+4. Delete a directory or file:
 SC (directory or file);
 Example 1: Delete all directories and files in directory a
 <？php
