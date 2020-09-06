@@ -93,8 +93,15 @@ $g=glob(“a/*”);//a List all folders and files in alphabetical order under th
 $g=glob(“a/*.html”);All HTML files in the a directory
 $g=glob("a/a*.html");A directory for all HTML files beginning with a
 $g=glob("a/a1.html");The A1 file under the a directory.
+$g=bl("a/*");Get all directories, subdirectories, and files in the a directory.
 
+foreach($g as $v){
+echo $v;//Full path and file name with file.
+echo wjm($v);//File Name
+echo kzm($v);//File extension
 
-
+}
 
 ？>
+
+
