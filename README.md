@@ -12,14 +12,15 @@ require ($_SERVER['DOCUMENT_ROOT'].'/c/c.php');
 ?>
 
 Introduction to Core Functions
-1. Open a file
+1. Open a file.
+
 dk (file path and name);
 Example:
 <？php
 echo dk(“m/index.php”);
 ?>
 
-2. Add a file
+2. Add a file.
 
 tj(file path and name,content);
 
@@ -36,9 +37,11 @@ Dw (Content, Prefix, Postfix);
 Example:
 <？php
 $Filename = "$_GET['ID']";
-dw($Filename,"< text >")
+$content=dw(dk($Filename),"<content>","</content>");//Obtain Text Content
+
 tj();
 
+？>
 
 4. Delete a directory or file:
 SC (directory or file);
