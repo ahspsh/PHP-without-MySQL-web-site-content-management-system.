@@ -1,4 +1,13 @@
 #PHP-without-MySQL-web-site-content-management-system.
+
+System introduction:
+Compact, flexible and efficient.
+
+Directly generate and edit static suitable for small or micro-site build.
+
+
+
+
 Directory structure:
 Function directory: "C".
 Template directory: "m".
@@ -11,7 +20,9 @@ Call Core File
 require ($_SERVER['DOCUMENT_ROOT'].'/c/c.php');
 ?>
 
-Introduction to Core Functions
+Introduction to Core Functions:
+
+
 1. Open a file.
 
 dk (file path and name);
@@ -26,12 +37,12 @@ tj(file path and name,content);
 
 Example:
 <？php
-tj(“m/test.php”,"Hello, world!");
+tj(“a/test.html”,"Hello, world!");
 ?>
 
 3.Obtain the desired content in the file (used to modify the file content or collection, can also be cross-site data processing)
 Grammar:
-dw(content,Front Positioning MarkerRear Positioning Marker)
+dw(content,Front Positioning Marker,Rear Positioning Marker)
 
 
 
@@ -45,7 +56,14 @@ Example:
 $Filename = "$_GET['ID']";
 $content=dw(dk($Filename),"<content>","</content>");//Obtain Text Content
 
-tj();
+//$Content[1][0]Send to the form for modification, assuming: $_POST["content"] Form Submission"
+$a["[t]"]="title";
+$a["[d]"]="Web Page Description";
+$a["[k]"]="Web Page Keyword";
+$a["[c]"]=$_POST["content"];
+
+
+tj($Filename,th(dk(“m/index.php”),$a));
 
 ？>
 
@@ -66,3 +84,4 @@ cz (file path and name);
 7.The characters contain:
 bh (content, keyword);
 
+8.
