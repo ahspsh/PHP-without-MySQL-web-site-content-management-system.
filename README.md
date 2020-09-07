@@ -42,8 +42,9 @@ tj(“a/test.html”,"Hello, world!");
 
 3.Obtain the desired content in the file (used to modify the file content or collection, can also be cross-site data processing)
 Grammar:
-dw(content,Front Positioning Marker,Rear Positioning Marker)
-
+<？php
+$dw=dw(content,Front Positioning Marker,Rear Positioning Marker);//$DW this is an array, and the first value is $DW [1] [0]
+?>
 
 
 4.Modification of the contents of the document:
